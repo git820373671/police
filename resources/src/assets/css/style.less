@@ -1,0 +1,112 @@
+@import "color";
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 12px;
+  text-decoration: none;
+  font-style: normal;
+  resize: none;
+}
+
+a {
+  color: @color-b0;
+}
+
+body, html, #app {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding-top: 70px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.clear {
+  clear: both;
+  &:after {
+    display: block;
+    clear: both;
+    height: 0;
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.m-t-5 {
+  margin-top: 5px;
+}
+
+.m-l-r-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.m-l-20 {
+  margin-left: 20px;
+}
+
+.img-box {
+  width: 100%;
+  > img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.bg-f1 {
+  background: @color-f1
+}
+
+.shadow {
+  box-shadow: 0 0 20px 1px @color-f1;
+}
+
+.shadow-b {
+  box-shadow: 0 4px 10px 0px @color-f1;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-success {
+  color: @color-success !important;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%
+}
+
+.text-danger {
+  color: @color-danger !important;
+}
+
+@import "common";
+@import "index";
+@import "list";
+@import "content";
+

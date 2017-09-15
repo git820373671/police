@@ -1,0 +1,22 @@
+{
+  "code": "1",
+  "result": {
+    "success": true,
+    "list": [
+      {
+        "id":"1",
+        "photoSrc": "/static/data/img/userHeader.jpg",
+        "title": "查缉布控标题",
+        "state": "待反馈",
+        "code": "123456"
+      },
+      {
+        "id":"1",
+        "photoSrc": "/static/data/img/userHeader.jpg",
+        "title": "我是个标题",
+        "state": "已反馈",
+        "code": "78955"
+      }
+    ]
+  }
+}

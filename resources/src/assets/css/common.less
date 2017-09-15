@@ -1,0 +1,71 @@
+.header-box {
+  .mint-header {
+    height: 50px;
+    background: @color-f2;
+    color: @color-b0;
+    .shadow
+  }
+  .mint-header-title {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .mintui {
+    font-size: 26px;
+    color: @color-primary;
+  }
+  .photo {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .right-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.footer {
+  .mint-tabbar {
+    background: @color-f2;
+    .shadow;
+    .mint-tab-item {
+      padding: 0;
+      height: 45px;
+    }
+    .mint-tab-item.is-selected {
+      background: @color-f2;
+    }
+    .icon-f-1, .icon-f-2 {
+      width: 100%;
+      height: 45px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto 80%;
+    }
+    .icon-f-1 {
+      background-image: url("../images/footer1-2.png");
+    }
+    .icon-f-2 {
+      background-image: url("../images/footer2-2.png");
+    }
+    .is-selected .icon-f-1 {
+      background-image: url("../images/footer1-1.png");
+    }
+    .is-selected .icon-f-2 {
+      background-image: url("../images/footer2-1.png");
+    }
+  }
+}
+
+.add-btn {
+  position: fixed;
+  width: 20%;
+  right: 5%;
+  bottom: 5%;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
