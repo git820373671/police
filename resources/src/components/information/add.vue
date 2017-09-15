@@ -2,16 +2,13 @@
   <div class="h100 bg-f1">
     <header-menu :headerData="headerData"></header-menu>
     <div class="content">
-      <mt-field label="案件信息：" v-model="subData.infor"></mt-field>
+      <mt-field label="案件标题：" v-model="subData.title"></mt-field>
       <mt-field label="案件编号：" v-model="subData.num"></mt-field>
-      <mt-field label="身份证：" v-model="subData.code"></mt-field>
-      <mt-field label="电 话：" type="tel" v-model="subData.tel"></mt-field>
-      <mt-field label="布控日期："   v-model="subData.date"></mt-field>
-      <mt-field label="车牌号：" v-model="subData.car"></mt-field>
-      <mt-field label="描 述：" type="textarea" rows="8" v-model="subData.detail" ></mt-field>
+      <mt-field label="案件内容：" type="textarea" rows="8" v-model="subData.detail"></mt-field>
+      <div class="length">{{textNum}}/5000</div>
     </div>
     <div class="sub-btn">
-      <mt-button type="primary" size="large" v-on:click="submit">提交布控</mt-button>
+      <mt-button type="primary" size="large" v-on:click="submit">发布</mt-button>
     </div>
   </div>
 
@@ -19,24 +16,32 @@
 <script>
   import HeaderMenu from '../common/header'
   export default{
-    name: 'ControlAdd',
+    name: 'InformationAdd',
     components: {
       HeaderMenu: HeaderMenu
     },
     data: function () {
       return {
         headerData: {
-          title: '查缉布控',
+          title: '信息研判',
           left: true
         },
+        textNum: 0,
         subData: {
-          infor: '',
+          title: '',
           num: '',
-          code: '',
-          tel: '',
-          date: '',
-          car: '',
           detail: ''
+        }
+      }
+    },
+    watch: {
+      'subData.detail': function (dataText) {
+        this.textNum = dataText.length
+        if (dataText.length >= 5000) {
+          this.$toast({
+            message: '最多只能输入5000字符',
+            duration: 1000
+          })
         }
       }
     },
@@ -55,7 +60,7 @@
           })
           setTimeout(function () {
             $this.$router.push({
-              path: '/control/list'
+              path: '/information/list'
             })
           }, 1500)
         })

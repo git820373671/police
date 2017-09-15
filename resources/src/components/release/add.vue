@@ -2,9 +2,9 @@
   <div class="h100 bg-f1">
     <header-menu :headerData="headerData"></header-menu>
     <div class="content">
-      <mt-field label="标题：" v-model="subData.title"></mt-field>
-      <mt-field label="输入内容：" type="textarea" rows="8" v-model="subData.detail" onfocus="watchLength()"></mt-field>
-      <div class="length">0/5000</div>
+      <mt-field label="标题：" v-model="subData.title" class="grey"></mt-field>
+      <mt-field label="输入内容：" type="textarea" rows="8" v-model="subData.detail"  class="grey"></mt-field>
+      <div class="length">{{textNum}}/5000</div>
     </div>
     <div class="sub-btn">
       <mt-button type="primary" size="large" v-on:click="submit">发布</mt-button>
@@ -15,7 +15,7 @@
 <script>
   import HeaderMenu from '../common/header'
   export default{
-    name: 'ReleaseList',
+    name: 'ReleaseAdd',
     components: {
       HeaderMenu: HeaderMenu
     },
@@ -25,16 +25,25 @@
           title: '发布预警',
           left: true
         },
+        textNum: 0,
         subData: {
           title: '',
           detail: ''
         }
       }
     },
+    watch: {
+      'subData.detail': function (dataText) {
+        this.textNum = dataText.length
+        if (dataText.length >= 5000) {
+          this.$toast({
+            message: '最多只能输入5000字符',
+            duration: 1000
+          })
+        }
+      }
+    },
     methods: {
-      watchLength: function () {
-        console.log(this.subData.detail)
-      },
       submit: function () {
         var url = '/static/data/submit.json'
         var prams = {
@@ -49,7 +58,7 @@
           })
           setTimeout(function () {
             $this.$router.push({
-              path: '/control/list'
+              path: '/release/list'
             })
           }, 1500)
         })

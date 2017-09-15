@@ -16,6 +16,9 @@
       <div slot="right" v-if="headerData.drop">
         <img src="../../assets/images/icon1.png" class="right-icon"/>
       </div>
+      <div slot="right" v-if="headerData.upload ">
+        上传附件
+      </div>
       <mt-button icon="more" slot="right" v-if="headerData.right"></mt-button>
     </mt-header>
   </div>
@@ -36,7 +39,8 @@
         photo: false,
         news: false,
         search: false,
-        drop: false
+        drop: false,
+        upload: false
       }
     }
   }

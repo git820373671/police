@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h100 bg-f2">
     <header-menu :headerData="headerData"></header-menu>
     <div class="index">
       <div class="welcome-text"> HELLO . <span>{{user.name}}</span>！</div>
@@ -48,7 +48,7 @@
         </li>
       </ul>
     </div>
-    <footer-bar></footer-bar>
+    <footer-bar :footerData="footerData"></footer-bar>
   </div>
 
 </template>
@@ -68,6 +68,9 @@
           left: false,
           photoSrc: '/static/data/img/userHeader.jpg',
           news: true
+        },
+        footerData: {
+          selected: 'index'
         },
         user: {
           name: '张先生'

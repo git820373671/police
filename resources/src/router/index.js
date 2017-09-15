@@ -12,9 +12,14 @@ import ReleaseList from '../components/release/list.vue'
 import ReleaseAdd from '../components/release/add.vue'
 // 信息研判
 import InformationList from '../components/information/list.vue'
+import InformationAdd from '../components/information/add.vue'
 // 我的
 // 我的案件
 import UserCase from '../components/user/case.vue'
+import UserAdd from '../components/user/add.vue'
+// 中心我的
+import MemberUser from '../components/member/user.vue'
+import MemberAdd from '../components/member/add.vue'
 Vue.use(Router)
 Vue.use(Resource)
 
@@ -51,9 +56,29 @@ export default new Router({
       component: InformationList
     },
     {
+      path: '/information/add',
+      name: 'InformationAdd',
+      component: InformationAdd
+    },
+    {
       path: '/user/case',
       name: 'UserCase',
       component: UserCase
+    },
+    {
+      path: '/user/add',
+      name: 'UserAdd',
+      component: UserAdd
+    },
+    {
+      path: '/member/user',
+      name: 'MemberUser',
+      component: MemberUser
+    },
+    {
+      path: '/member/add',
+      name: 'MemberAdd',
+      component: MemberAdd
     }
   ]
 })

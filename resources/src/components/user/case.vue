@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h100 bg-f2">
     <header-menu :headerData="headerData"></header-menu>
     <div class="listA">
       <ul class="last-border">

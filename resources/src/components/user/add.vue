@@ -2,16 +2,11 @@
   <div class="h100 bg-f1">
     <header-menu :headerData="headerData"></header-menu>
     <div class="content">
-      <mt-field label="案件信息：" v-model="subData.infor"></mt-field>
-      <mt-field label="案件编号：" v-model="subData.num"></mt-field>
-      <mt-field label="身份证：" v-model="subData.code"></mt-field>
-      <mt-field label="电 话：" type="tel" v-model="subData.tel"></mt-field>
-      <mt-field label="布控日期："   v-model="subData.date"></mt-field>
-      <mt-field label="车牌号：" v-model="subData.car"></mt-field>
-      <mt-field label="描 述：" type="textarea" rows="8" v-model="subData.detail" ></mt-field>
+      <h3  class="content-title">提交相关资料</h3>
+      <mt-field label="反馈内容：" type="textarea" rows="8" v-model="subData.detail" class="grey"></mt-field>
     </div>
     <div class="sub-btn">
-      <mt-button type="primary" size="large" v-on:click="submit">提交布控</mt-button>
+      <mt-button type="primary" size="large" v-on:click="submit">提交资料</mt-button>
     </div>
   </div>
 
@@ -19,23 +14,19 @@
 <script>
   import HeaderMenu from '../common/header'
   export default{
-    name: 'ControlAdd',
+    name: 'MemberAdd',
     components: {
       HeaderMenu: HeaderMenu
     },
     data: function () {
       return {
         headerData: {
-          title: '查缉布控',
-          left: true
+          title: '案件反馈',
+          left: true,
+          upload: true
         },
+        textNum: 0,
         subData: {
-          infor: '',
-          num: '',
-          code: '',
-          tel: '',
-          date: '',
-          car: '',
           detail: ''
         }
       }
@@ -55,7 +46,7 @@
           })
           setTimeout(function () {
             $this.$router.push({
-              path: '/control/list'
+              path: '/user/result'
             })
           }, 1500)
         })
