@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95b52f59-6fab-4c4b-b95a-6bab106d4ed3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/src/assets/css/detail.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/src/assets/css/upLoad.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/src/components/common/uploader.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/src/components/member/list.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/src/components/need/add.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/src/components/need/detail.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/src/components/need/list.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/src/components/user/detail.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/src/components/user/detail2.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/static/data/caseDetail.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/static/data/caseDetail2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/static/data/memberList.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/static/data/needDetail.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/static/data/needList.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/src/assets/css/common.less" afterPath="$PROJECT_DIR$/resources/src/assets/css/common.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/src/assets/css/content.less" afterPath="$PROJECT_DIR$/resources/src/assets/css/content.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/src/assets/css/list.less" afterPath="$PROJECT_DIR$/resources/src/assets/css/list.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/src/assets/css/style.css" afterPath="$PROJECT_DIR$/resources/src/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/src/assets/css/style.less" afterPath="$PROJECT_DIR$/resources/src/assets/css/style.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/src/components/common/header.vue" afterPath="$PROJECT_DIR$/resources/src/components/common/header.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/src/components/index/index.vue" afterPath="$PROJECT_DIR$/resources/src/components/index/index.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/src/components/member/user.vue" afterPath="$PROJECT_DIR$/resources/src/components/member/user.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/src/components/user/add.vue" afterPath="$PROJECT_DIR$/resources/src/components/user/add.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/src/components/user/case.vue" afterPath="$PROJECT_DIR$/resources/src/components/user/case.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/src/router/index.js" afterPath="$PROJECT_DIR$/resources/src/router/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -710,7 +685,7 @@
       <updated>1505458561395</updated>
       <workItem from="1505458563246" duration="431000" />
       <workItem from="1505459087539" duration="6873000" />
-      <workItem from="1505692736390" duration="15820000" />
+      <workItem from="1505692736390" duration="15835000" />
     </task>
     <task id="LOCAL-00001" summary="页面提交">
       <created>1505465344239</created>
@@ -726,11 +701,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505465361004</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="页面提交">
+      <created>1505710758124</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1505710758124</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23124000" />
+    <option name="totallyTimeSpent" value="23139000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -745,11 +727,11 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.35714287" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.64285713" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.64285713" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24160346" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
