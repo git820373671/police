@@ -4,15 +4,9 @@
     "success": true,
     "detailData": {
       "id": "1",
-      "code": "123457",
-      "detail": "在某某小区发现一贩毒团伙",
-      "name": "赵丽颖",
-      "src": [
-        "/static/data/img/userHeader.jpg",
-        "/static/data/img/userHeader.jpg"
-      ],
-      "Ncode": "15040000000",
-      "Nname": "赵丽颖"
+      "title": "在某某小区发现一贩毒团伙",
+      "detail": "在某某小区发现一贩毒团伙在某某",
+      "time": "2017-10-30"
     }
   }
 }

@@ -115,7 +115,7 @@
 .listB {
   padding-bottom: 50px;
   ul {
-     li {
+    li {
       padding-top: 20px;
       &:after {
         display: block;
@@ -186,7 +186,7 @@
         color: @color-b2;
 
       }
-    .information {
+      .information {
         display: block;
         float: left;
         width: 72%;
@@ -198,6 +198,99 @@
         }
         > .detail {
           line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+/** listD 我的任务 **/
+.listD {
+  margin-top: -20px;
+  background: @color-f2;
+  &.listDs {
+    margin-top: 20px;
+    ul {
+      padding: 0;
+      .icon {
+        width: 7px;
+      }
+    }
+  }
+  ul {
+    padding: 10px 0 0 0;
+    li {
+      position: relative;
+      padding: 10px 5%;
+      border-bottom: solid 1px @color-f1;
+      p {
+        line-height: 30px;
+      }
+      &:after {
+        display: block;
+        clear: both;
+        content: '';
+      }
+      &:nth-last-child(1) {
+        border: none;
+      }
+      .icon {
+        position: absolute;
+        top: 35%;
+        right: 10%;
+        width: 10px;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+
+  }
+}
+
+/** listE 重大案件指挥调度 **/
+.listE {
+
+  > ul {
+
+    > li {
+      width: 90%;
+      margin: 0 auto;
+      padding: 5px 0 15px 0;
+      border-bottom: solid 1px @color-f0;
+
+      .title {
+        line-height: 30px;
+        font-size: 15px;
+        font-weight: lighter;
+      }
+      .unit {
+        line-height: 30px;
+        min-height: 30px;
+        &:after {
+          display: block;
+          clear: both;
+          content: '';
+        }
+        p {
+          height: 30px;
+        }
+        > span.badge {
+          display: block;
+          float: left;
+          padding: 0 10px;
+          line-height: 20px;
+          margin: 5px 10px 5px 0;
+          border-radius: 5px;
+          background: @color-primary;
+          color: @color-f0;
+        }
+        i {
+          display: block;
+          float: left;
+          margin-right: 10px;
+          color: @color-primary;
         }
       }
     }

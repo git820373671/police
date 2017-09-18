@@ -6,7 +6,7 @@
       <ul class="floor1">
         <li>
           <p>
-            <router-link to="/"><img src="../../assets/images/floor1-1.png"/><span>我的任务</span></router-link>
+            <router-link to="/task/list"><img src="../../assets/images/floor1-1.png"/><span>我的任务</span></router-link>
           </p>
         </li>
         <li>
@@ -33,7 +33,7 @@
         </li>
         <li>
           <p>
-            <router-link to="/"><img src="../../assets/images/floor2-4.png"/><span>指挥调度</span></router-link>
+            <router-link to="/dispatch/list"><img src="../../assets/images/floor2-4.png"/><span>指挥调度</span></router-link>
           </p>
         </li>
         <li>

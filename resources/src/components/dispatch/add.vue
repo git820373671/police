@@ -3,9 +3,21 @@
     <header-menu :headerData="headerData"></header-menu>
     <div class="content">
       <mt-field label="案件标题：" v-model="subData.title"></mt-field>
-      <mt-field label="案件编号：" v-model="subData.num"></mt-field>
       <mt-field label="案件内容：" type="textarea" rows="8" v-model="subData.detail"></mt-field>
       <div class="length">{{textNum}}/5000</div>
+    </div>
+
+    <div class="listD listDs">
+      <ul>
+        <li>
+          <p>参与单位</p>
+          <div class="icon"><img src="../../assets/images/icon4.png"/></div>
+        </li>
+        <li>
+          <p>研判组织方式</p>
+          <div class="icon"><img src="../../assets/images/icon4.png"/></div>
+        </li>
+      </ul>
     </div>
     <div class="sub-btn">
       <mt-button type="primary" size="large" v-on:click="submit">发布</mt-button>
@@ -16,20 +28,19 @@
 <script>
   import HeaderMenu from '../common/header'
   export default{
-    name: 'InformationAdd',
+    name: 'DispatchAdd',
     components: {
       HeaderMenu: HeaderMenu
     },
     data: function () {
       return {
         headerData: {
-          title: '信息研判',
+          title: '重大案件指挥调度',
           left: true
         },
         textNum: 0,
         subData: {
           title: '',
-          num: '',
           detail: ''
         }
       }

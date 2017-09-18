@@ -26,10 +26,17 @@ import UserCase from '../components/user/case.vue'
 import UserAdd from '../components/user/add.vue'
 import UserDetail from '../components/user/detail.vue'
 import UserDetail2 from '../components/user/detail2.vue'
+import UserCaseTab from '../components/user/caseTab.vue'
+// 重大案件指挥调度
+import DispatchList from '../components/dispatch/list.vue'
+import DispatchAdd from '../components/dispatch/add.vue'
+import DispatchDetail from '../components/dispatch/detail.vue'
 // 中心我的
 import MemberUser from '../components/member/user.vue'
 import MemberList from '../components/member/list.vue'
 import MemberAdd from '../components/member/add.vue'
+// 我的任务
+import TaskList from '../components/task/list.vue'
 Vue.use(Router)
 Vue.use(Resource)
 
@@ -121,6 +128,16 @@ export default new Router({
       component: UserDetail2
     },
     {
+      path: '/user/caseTab',
+      name: 'UserCaseTab',
+      component: UserCaseTab
+    },
+    {
+      path: '/task/list',
+      name: 'TaskList',
+      component: TaskList
+    },
+    {
       path: '/member/user',
       name: 'MemberUser',
       component: MemberUser
@@ -134,6 +151,20 @@ export default new Router({
       path: '/member/add',
       name: 'MemberAdd',
       component: MemberAdd
-    }
-  ]
+    },
+    {
+      path: '/dispatch/list',
+      name: 'DispatchList',
+      component: DispatchList
+    },
+    {
+      path: '/dispatch/add',
+      name: 'DispatchAdd',
+      component: DispatchAdd
+    },
+    {
+      path: '/dispatch/detail',
+      name: 'DispatchDetail',
+      component: DispatchDetail
+    }]
 })

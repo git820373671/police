@@ -30,11 +30,6 @@
       this.$ajax_get(url, '', function (data) {
         if (!data.success) return
         this.detailData = data.detailData
-        if (data.detailData.state === '1') {
-          this.headerData.link = true
-        } else {
-          this.headerData.link = false
-        }
       })
     }
   }

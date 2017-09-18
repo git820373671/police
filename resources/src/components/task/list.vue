@@ -1,30 +1,16 @@
 <template>
-  <div class="h100 bg-f2">
+  <div class="h100 bg-f1">
     <header-menu :headerData="headerData"></header-menu>
-    <div class="listA">
-      <ul class="">
+    <div class="listD">
+      <ul>
         <li v-for="item in listData" :key="item.id">
-          <router-link to="/release/detail">
-          <div class="photo">
-            <img :src="item.photoSrc"/>
-          </div>
-          <div class="information information-c">
-            <h3>{{item.title}}</h3>
-            <div class="detail">{{item.detail}}</div>
-            <div class="state" v-if="item.state==1">通过</div>
-            <div class="state text-danger" v-if="item.state==2">拒绝</div>
-            <div class="detail-bottom">
-              <p class="left">热度：{{item.num}}</p>
-              <p class="right">{{item.time}}</p>
-            </div>
-          </div>
+          <router-link to="/user/detail2">
+            <p>指令标题：{{item.title}}</p>
+            <p>下发时间：{{item.time}}</p>
+            <div class="icon"><img src="../../assets/images/icon4.png"/></div>
           </router-link>
         </li>
       </ul>
-    </div>
-    <div class="add-btn">
-      <router-link to="/release/add">
-        <img src="../../assets/images/add.png"/></router-link>
     </div>
   </div>
 
@@ -32,21 +18,21 @@
 <script>
   import HeaderMenu from '../common/header'
   export default{
-    name: 'ReleaseList',
+    name: 'TaskList',
     components: {
       HeaderMenu: HeaderMenu
     },
     data: function () {
       return {
         headerData: {
-          title: '发布预警',
+          title: '我的任务',
           left: true
         },
         listData: {}
       }
     },
     created: function () {
-      var url = '/static/data/releaseList.json'
+      var url = '/static/data/taskList.json'
       var prams = {}
       var $this = this
       this.$ajax_get(url, prams, function (data) {

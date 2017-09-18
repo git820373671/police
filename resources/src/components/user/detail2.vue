@@ -33,7 +33,7 @@
           title: '查看案件',
           left: true,
           link: true,
-          linkPath: '/',
+          linkPath: '/user/caseTab',
           linkName: '查看其它'
         },
         detailData: {}

@@ -3,7 +3,16 @@
     <header-menu :headerData="headerData"></header-menu>
     <div class="detail1">
       <h3 class="title-1">{{detailData.title}}</h3>
-      <div class="detail-box" style="min-height: 200px">{{detailData.detail}} </div>
+      <div class="detail-box">{{detailData.detail}} </div>
+      <div class="listE detail-listE">
+        <div class="unit"><p class="left">参与单位：</p>
+          <span class="badge" v-for="$span in detailData.company">{{$span}}</span>
+        </div>
+        <div class="unit"><p class="left">研判组织方式：</p>
+          <i v-for="$i in detailData.way">{{$i}}</i>
+        </div>
+
+      </div>
     </div>
 
   </div>
@@ -11,30 +20,25 @@
 <script>
   import HeaderMenu from '../common/header'
   export default{
-    name: 'ReleaseDetail',
+    name: 'DispatchDetail',
     components: {
       HeaderMenu: HeaderMenu
     },
     data: function () {
       return {
         headerData: {
-          title: '发布预警',
+          title: '重大案件指挥调度',
           left: true
         },
         detailData: {}
       }
     },
     created: function () {
-      var url = '/static/data/releaseDetail.json'
+      var url = '/static/data/dispatchDetail.json'
 
       this.$ajax_get(url, '', function (data) {
         if (!data.success) return
         this.detailData = data.detailData
-        if (data.detailData.state === '1') {
-          this.headerData.link = true
-        } else {
-          this.headerData.link = false
-        }
       })
     }
   }
