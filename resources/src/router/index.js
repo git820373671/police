@@ -14,9 +14,12 @@ import ControlAdd from '../components/control/add.vue'
 // 发布预警
 import ReleaseList from '../components/release/list.vue'
 import ReleaseAdd from '../components/release/add.vue'
+import ReleaseDetail from '../components/release/detail.vue'
 // 信息研判
 import InformationList from '../components/information/list.vue'
 import InformationAdd from '../components/information/add.vue'
+import InformationDetail from '../components/information/detail.vue'
+import InformationDetail2 from '../components/information/detail2.vue'
 // 我的
 // 我的案件
 import UserCase from '../components/user/case.vue'
@@ -73,6 +76,11 @@ export default new Router({
       component: ReleaseAdd
     },
     {
+      path: '/release/detail',
+      name: 'ReleaseDetail',
+      component: ReleaseDetail
+    },
+    {
       path: '/information/list',
       name: 'InformationList',
       component: InformationList
@@ -81,6 +89,16 @@ export default new Router({
       path: '/information/add',
       name: 'InformationAdd',
       component: InformationAdd
+    },
+    {
+      path: '/information/detail',
+      name: 'InformationDetail',
+      component: InformationDetail
+    },
+    {
+      path: '/information/detail2',
+      name: 'InformationDetail2',
+      component: InformationDetail2
     },
     {
       path: '/user/case',

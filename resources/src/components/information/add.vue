@@ -60,7 +60,7 @@
           })
           setTimeout(function () {
             $this.$router.push({
-              path: '/information/list'
+              path: '/information/detail'
             })
           }, 1500)
         })

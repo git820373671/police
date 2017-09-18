@@ -4,6 +4,7 @@
     <div class="listA">
       <ul class="">
         <li v-for="item in listData" :key="item.id">
+          <router-link to="/release/detail">
           <div class="photo">
             <img :src="item.photoSrc"/>
           </div>
@@ -17,6 +18,7 @@
               <p class="right">{{item.time}}</p>
             </div>
           </div>
+          </router-link>
         </li>
       </ul>
     </div>
