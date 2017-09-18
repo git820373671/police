@@ -1,26 +1,25 @@
 <template>
   <div class="h100 bg-f2">
     <header-menu :headerData="headerData"></header-menu>
-    <div class="listA">
-      <ul class="last-border">
+    <div class="listB">
+      <ul>
         <li v-for="item in listData" :key="item.id">
-          <router-link :to="{name:'UserDetail', params: {id:'item.id'}}">
+          <router-link to="/need/detail">
             <div class="photo">
               <img :src="item.photoSrc"/>
             </div>
-            <div class="information information-b">
-              <h3>{{item.title}}</h3>
-              <div class="detail">{{item.detail}}</div>
+            <div class="information">
+              <h3>案件信息：{{item.title}}</h3>
+              <div class="detail">发起人：{{item.name}}</div>
               <div class="state">{{item.state}}</div>
-              <div class="name m-t-5">发起人：{{item.name}}</div>
-              <div class="case m-t-5">
-                <p class="case-copy">{{item.code}} <i>拷贝</i></p>
-                <span>案件编号： </span>
-              </div>
             </div>
           </router-link>
         </li>
       </ul>
+    </div>
+    <div class="add-btn">
+      <router-link to="/need/add">
+        <img src="../../assets/images/add.png"/></router-link>
     </div>
   </div>
 
@@ -28,21 +27,21 @@
 <script>
   import HeaderMenu from '../common/header'
   export default{
-    name: 'UserCase',
+    name: 'NeedList',
     components: {
       HeaderMenu: HeaderMenu
     },
     data: function () {
       return {
         headerData: {
-          title: '我的案件',
+          title: '查询需求',
           left: true
         },
         listData: {}
       }
     },
     created: function () {
-      var url = '/static/data/caseList.json'
+      var url = '/static/data/needList.json'
       var prams = {}
       var $this = this
       this.$ajax_get(url, prams, function (data) {

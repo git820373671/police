@@ -2,7 +2,7 @@
   <div class="h100 bg-f1">
     <header-menu :headerData="headerData"></header-menu>
     <div class="memorandum">
-      <router-link to="/member/add">
+      <router-link to="/member/list">
         <img src="../../assets/images/icon2.png"/> 备忘录
       </router-link>
     </div>

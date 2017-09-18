@@ -110,3 +110,96 @@
     }
   }
 }
+
+/** listB 查询需求 **/
+.listB {
+  padding-bottom: 50px;
+  ul {
+     li {
+      padding-top: 20px;
+      &:after {
+        display: block;
+        clear: both;
+        content: '';
+      }
+      .photo {
+        display: block;
+        width: 20%;
+        float: left;
+        img {
+          display: block;
+          width: 50%;
+          margin: 0 auto;
+          border-radius: 50%;
+        }
+
+      }
+      .information {
+        position: relative;
+        display: block;
+        float: left;
+        width: 75%;
+        h3 {
+          width: 80%;
+          height: 30px;
+          line-height: 30px;
+          font-size: 12px;
+          .ellipsis
+        }
+        .detail {
+          width: 80%;
+          height: 25px;
+          line-height: 20px;
+          .ellipsis
+        }
+        .state {
+          position: absolute;
+          top: 0;
+          right: 0;
+          color: @color-warning;
+          line-height: 30px;
+        }
+      }
+    }
+
+  }
+}
+
+/** listC 备忘录 **/
+.listC {
+  padding-bottom: 50px;
+  margin-top: -20px;
+  ul {
+    > li {
+      padding: 20px;
+      border-bottom: solid 1px @color-f1;
+      &:after {
+        display: block;
+        clear: both;
+        content: '';
+      }
+      .time {
+        display: block;
+        float: left;
+        width: 28%;
+        line-height: 30px;
+        color: @color-b2;
+
+      }
+    .information {
+        display: block;
+        float: left;
+        width: 72%;
+        > h3 {
+          font-size: 14px;
+          line-height: 30px;
+          width: 100%;
+          .ellipsis
+        }
+        > .detail {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

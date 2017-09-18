@@ -1,0 +1,19 @@
+{
+  "code": "1",
+  "result": {
+    "success": true,
+    "detailData": {
+      "id": "1",
+      "code": "123457",
+      "detail": "在某某小区发现一贩毒团伙",
+      "state": "紧急",
+      "name": "张小白",
+      "src": [
+        "/static/data/img/userHeader.jpg",
+        "/static/data/img/userHeader.jpg"
+      ],
+      "Ncode": "15040000000",
+      "Nname": "赵丽颖"
+    }
+  }
+}

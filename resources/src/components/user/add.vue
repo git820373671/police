@@ -46,7 +46,7 @@
           })
           setTimeout(function () {
             $this.$router.push({
-              path: '/user/result'
+              path: '/user/detail2'
             })
           }, 1500)
         })

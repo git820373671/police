@@ -19,6 +19,9 @@
       <div slot="right" v-if="headerData.upload ">
         上传附件
       </div>
+      <div slot="right" v-if="headerData.link " >
+        <router-link :to="headerData.linkPath" class="text-primary">{{headerData.linkName}}</router-link>
+      </div>
       <mt-button icon="more" slot="right" v-if="headerData.right"></mt-button>
     </mt-header>
   </div>
@@ -40,7 +43,10 @@
         news: false,
         search: false,
         drop: false,
-        upload: false
+        upload: false,
+        link: false,
+        linkPath: '/',
+        linkName: ''
       }
     }
   }

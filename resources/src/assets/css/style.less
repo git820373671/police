@@ -50,6 +50,10 @@ img {
   margin-top: 5px;
 }
 
+.p-t-20 {
+  padding-top: 20px !important;
+}
+
 .m-l-r-20 {
   margin-left: 20px;
   margin-right: 20px;
@@ -70,6 +74,7 @@ img {
 .bg-f1 {
   background: @color-f1
 }
+
 .bg-f2 {
   background: @color-f2
 }
@@ -91,13 +96,16 @@ img {
 .text-success {
   color: @color-success !important;
 }
+.text-primary {
+  color: @color-primary !important;
+}
 
 .w100 {
   width: 100%;
 }
 
 .h100 {
-  height: 100%;
+  min-height: 100%;
   padding-top: 70px;
 }
 
@@ -108,6 +116,8 @@ img {
 @import "common";
 @import "index";
 @import "list";
+@import "detail";
 @import "content";
 @import "special";
+@import "upLoad";
 

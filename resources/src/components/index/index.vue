@@ -18,7 +18,7 @@
       <ul class="floor2">
         <li>
           <p>
-            <router-link to="/"><img src="../../assets/images/floor2-1.png"/><span>查询需求</span></router-link>
+            <router-link to="/need/list"><img src="../../assets/images/floor2-1.png"/><span>查询需求</span></router-link>
           </p>
         </li>
         <li>

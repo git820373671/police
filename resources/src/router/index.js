@@ -4,6 +4,10 @@ import Resource from 'vue-resource'
 import '../assets/script/layout.js'
 import '../assets/css/style.css'
 import Index from '../components/index/index.vue'
+// 查询需求
+import NeedList from '../components/need/list.vue'
+import NeedAdd from '../components/need/add.vue'
+import NeedDetail from '../components/need/detail.vue'
 // 查缉布控
 import ControlList from '../components/control/list.vue'
 import ControlAdd from '../components/control/add.vue'
@@ -17,8 +21,11 @@ import InformationAdd from '../components/information/add.vue'
 // 我的案件
 import UserCase from '../components/user/case.vue'
 import UserAdd from '../components/user/add.vue'
+import UserDetail from '../components/user/detail.vue'
+import UserDetail2 from '../components/user/detail2.vue'
 // 中心我的
 import MemberUser from '../components/member/user.vue'
+import MemberList from '../components/member/list.vue'
 import MemberAdd from '../components/member/add.vue'
 Vue.use(Router)
 Vue.use(Resource)
@@ -29,6 +36,21 @@ export default new Router({
       path: '/',
       name: 'Index',
       component: Index
+    },
+    {
+      path: '/need/add',
+      name: 'NeedAdd',
+      component: NeedAdd
+    },
+    {
+      path: '/need/list',
+      name: 'NeedList',
+      component: NeedList
+    },
+    {
+      path: '/need/detail',
+      name: 'NeedDetail',
+      component: NeedDetail
     },
     {
       path: '/control/list',
@@ -71,9 +93,24 @@ export default new Router({
       component: UserAdd
     },
     {
+      path: '/user/detail',
+      name: 'UserDetail',
+      component: UserDetail
+    },
+    {
+      path: '/user/detail2',
+      name: 'UserDetail2',
+      component: UserDetail2
+    },
+    {
       path: '/member/user',
       name: 'MemberUser',
       component: MemberUser
+    },
+    {
+      path: '/member/list',
+      name: 'MemberList',
+      component: MemberList
     },
     {
       path: '/member/add',
