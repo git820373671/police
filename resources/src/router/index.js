@@ -37,6 +37,8 @@ import MemberList from '../components/member/list.vue'
 import MemberAdd from '../components/member/add.vue'
 // 我的任务
 import TaskList from '../components/task/list.vue'
+// 登录
+import Login from '../components/login/login.vue'
 Vue.use(Router)
 Vue.use(Resource)
 
@@ -166,5 +168,10 @@ export default new Router({
       path: '/dispatch/detail',
       name: 'DispatchDetail',
       component: DispatchDetail
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
     }]
 })
