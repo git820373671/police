@@ -25,9 +25,13 @@
     </div>
     <div class='sub-btn sub-btns'>
       <mt-button type='primary' size='large'>拒绝</mt-button>
-      <mt-button type='primary' size='large'>下达指令</mt-button>
+      <mt-button type='primary' size='large' v-on:click="isSelect=true">下达指令</mt-button>
     </div>
-    <select-box :selectData='selectData'></select-box>
+    <div class="pop-box" v-if="isSelect">
+      <h2 class="pop-title">选择参与战位</h2>
+      <select-box :selectData='selectData'></select-box>
+      <div class="pop-btn" v-on:click="isSelect=false">确定</div>
+    </div>
   </div>
 </template>
 <script>
@@ -51,6 +55,7 @@
           'selectList': [],
           'value': ''
         },
+        isSelect: false,
         detailData: {},
         subData: {
           detail: ''
@@ -63,7 +68,6 @@
         if (!data.success) return
         this.detailData = data.detailData
       })
-
       var selectUrl = '/static/data/select.json'
       this.$ajax_get(selectUrl, '', function (data) {
         if (!data.success) return

@@ -16,19 +16,26 @@
     </div>
     <div class="sub-btn sub-btns" v-if="detailData.state==1">
       <mt-button type="primary" size="large">拒绝</mt-button>
-      <mt-button type="primary" size="large">下达指令</mt-button>
+      <mt-button type="primary" size="large" v-on:click="isSelect=true">下达指令</mt-button>
     </div>
     <div class="sub-btn" v-if="detailData.state==2">
       <mt-button type="primary" size="large" v-on:click="goResult">反馈结果</mt-button>
+    </div>
+    <div class="pop-box" v-if="isSelect">
+      <h2 class="pop-title">选择参与战位</h2>
+      <select-box :selectData='selectData'></select-box>
+      <div class="pop-btn" v-on:click="isSelect=false">确认</div>
     </div>
   </div>
 </template>
 <script>
   import HeaderMenu from '../common/header'
+  import selectBox from '../common/select'
   export default{
-    name: 'MemberAdd',
+    name: 'UserDetail',
     components: {
-      HeaderMenu: HeaderMenu
+      HeaderMenu: HeaderMenu,
+      selectBox: selectBox
     },
     data: function () {
       return {
@@ -39,12 +46,16 @@
           linkPath: '/user/caseTab',
           linkName: '查看其它'
         },
+        selectData: {
+          'selectList': [],
+          'value': ''
+        },
+        isSelect: false,
         detailData: {}
       }
     },
     created: function () {
       var url = '/static/data/caseDetail.json'
-
       this.$ajax_get(url, '', function (data) {
         if (!data.success) return
         this.detailData = data.detailData
@@ -53,6 +64,11 @@
         } else {
           this.headerData.link = false
         }
+      })
+      var selectUrl = '/static/data/select.json'
+      this.$ajax_get(selectUrl, '', function (data) {
+        if (!data.success) return
+        this.selectData.selectList = data.selectData
       })
     },
     methods: {
