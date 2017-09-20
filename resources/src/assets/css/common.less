@@ -195,15 +195,15 @@
   }
 }
 
-.radio-box {
+.check-box {
   position: fixed;
   top: 25%;
   left: 18%;
   width: 69%;
   height: 300px;
   overflow: auto;
-  .mint-radiolist {
-    .mint-radiolist-title {
+  .mint-checklist {
+    .mint-checklist-title {
       display: none;
     }
     .mint-cell {
@@ -213,14 +213,14 @@
       border-bottom: solid 1px @color-b2;
 
     }
-    .mint-radio-core {
+    .mint-checkbox-core {
       width: 15px;
       height: 15px;
       &:after {
         display: none;
       }
     }
-    .mint-radio-input:checked + .mint-radio-core {
+    .mint-checkbox-input:checked + .mint-checkbox-core {
       background: @color-primary;
     }
   }

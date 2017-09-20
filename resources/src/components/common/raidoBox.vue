@@ -1,10 +1,10 @@
 <template>
-  <div class="radio-box">
-    <mt-radio
+  <div class="check-box">
+    <mt-checklist
       align="right"
-      v-model="radioData.value"
-      :options="radioData.radioList">
-    </mt-radio>
+      v-model="checkData.value"
+      :options="checkData.checkList">
+    </mt-checklist>
   </div>
 </template>
 <script>
@@ -14,9 +14,9 @@
       return {}
     },
     props: {
-      radioData: {
+      checkData: {
         type: Object,
-        radioList: []
+        checkList: []
       }
     }
   }
