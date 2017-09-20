@@ -11,7 +11,7 @@
             <h3>{{item.title}}</h3>
             <div class="state">{{item.state}}</div>
             <div class="case m-t-5"><span>案件编号： </span>
-              <p class="case-copy">{{item.code}} <i>拷贝</i></p></div>
+              <p class="case-copy" v-on:click="copy()">{{item.code}} <i>拷贝</i></p></div>
           </div>
         </li>
       </ul>
@@ -47,6 +47,14 @@
         if (!data.success) return
         $this.listData = data.list
       })
+    },
+    methods: {
+      copy: function () {
+        this.$toast({
+          message: '复制成功',
+          duration: 1000
+        })
+      }
     }
   }
 </script>
