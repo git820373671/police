@@ -87,7 +87,7 @@
         headerData: {
           title: '案件详情',
           left: true,
-          link: false,
+          link: true,
           linkPath: '/user/detail2',
           linkName: '查看详情'
         },

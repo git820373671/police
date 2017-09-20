@@ -2,7 +2,7 @@
   <div class="h100 bg-f2">
     <header-menu :headerData="headerData"></header-menu>
     <div class="index">
-      <div class="welcome-text"> HELLO . <span>{{user.name}}</span>！</div>
+      <div class="welcome-text"><img src="../../assets/images/hello.png"/></div>
       <ul class="floor1">
         <li>
           <p>
@@ -23,7 +23,8 @@
         </li>
         <li>
           <p>
-            <router-link to="/information/list"><img src="../../assets/images/floor2-2.png"/><span>信息研判</span></router-link>
+            <router-link to="/information/list"><img src="../../assets/images/floor2-2.png"/><span>信息研判</span>
+            </router-link>
           </p>
         </li>
         <li>
@@ -33,7 +34,8 @@
         </li>
         <li>
           <p>
-            <router-link to="/dispatch/list"><img src="../../assets/images/floor2-4.png"/><span>指挥调度</span></router-link>
+            <router-link to="/dispatch/list"><img src="../../assets/images/floor2-4.png"/><span>指挥调度</span>
+            </router-link>
           </p>
         </li>
         <li>
