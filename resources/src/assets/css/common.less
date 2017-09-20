@@ -160,26 +160,33 @@
         &.show {
           height: auto;
         }
-        > .mint-radiolist {
-          .mint-radiolist-title {
-            display: none;
+        .select-child {
+          h4 {
+            line-height: 30px;
+            padding: 0 10px;
+            background: #e5ebf5;
           }
-          .mint-cell {
-            min-height: 30px;
-          }
-          .mint-cell-wrapper {
-            border-bottom: solid 1px @color-b2;
-
-          }
-          .mint-radio-core {
-            width: 15px;
-            height: 15px;
-            &:after {
+          .mint-checklist {
+            .mint-checklist-title {
               display: none;
             }
-          }
-          .mint-radio-input:checked + .mint-radio-core {
-            background: @color-primary;
+            .mint-cell {
+              min-height: 30px;
+            }
+            .mint-cell-wrapper {
+              border-bottom: solid 1px @color-b2;
+
+            }
+            .mint-checkbox-core {
+              width: 15px;
+              height: 15px;
+              &:after {
+                display: none;
+              }
+            }
+            .mint-checkbox-input:checked + .mint-checkbox-core {
+              background: @color-primary;
+            }
           }
         }
       }

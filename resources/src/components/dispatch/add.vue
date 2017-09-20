@@ -54,7 +54,7 @@
         },
         selectData: {
           'selectList': [],
-          'value': ''
+          'value': []
         },
         isSelect: false,
         radioData: {

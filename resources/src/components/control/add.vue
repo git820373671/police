@@ -39,7 +39,7 @@
         },
         selectData: {
           'selectList': [],
-          'value': ''
+          'value': []
         },
         isSelect: false,
         subData: {

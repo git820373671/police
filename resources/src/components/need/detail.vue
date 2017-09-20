@@ -53,7 +53,7 @@
         },
         selectData: {
           'selectList': [],
-          'value': ''
+          'value': []
         },
         isSelect: false,
         detailData: {},

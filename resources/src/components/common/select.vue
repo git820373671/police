@@ -4,11 +4,15 @@
       <li v-for="(item,index) in selectData.selectList">
         <h3 class="select-title" v-on:click="toggle(index)">{{item.title}}</h3>
         <div class="select-con" v-bind:id="index">
-          <mt-radio
-            align="right"
-            v-model="selectData.value"
-            :options="item.child">
-          </mt-radio>
+          <div class="select-child"  v-for="$item in item.child">
+            <h4>{{$item.title}}</h4>
+            <mt-checklist
+              align="right"
+              v-model="selectData.value"
+              :options="$item.childs">
+            </mt-checklist>
+          </div>
+
         </div>
       </li>
     </ul>
