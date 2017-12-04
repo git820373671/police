@@ -32,6 +32,7 @@
       }
     },
     created: function () {
+      console.log('this.$route.params', this.$route.params)
       var url = '/static/data/taskList.json'
       var prams = {}
       var $this = this

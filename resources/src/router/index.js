@@ -55,7 +55,7 @@ export default new Router({
       component: NeedAdd
     },
     {
-      path: '/need/list',
+      path: '/need/list/:dataId',
       name: 'NeedList',
       component: NeedList
     },
@@ -65,7 +65,7 @@ export default new Router({
       component: NeedDetail
     },
     {
-      path: '/control/list',
+      path: '/control/list/:dataId/:twoid',
       name: 'ControlList',
       component: ControlList
     },
@@ -135,7 +135,7 @@ export default new Router({
       component: UserCaseTab
     },
     {
-      path: '/task/list',
+      path: '/task/list/:dataId',
       name: 'TaskList',
       component: TaskList
     },

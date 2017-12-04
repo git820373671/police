@@ -75,7 +75,7 @@
           })
           setTimeout(function () {
             $this.$router.push({
-              path: '/control/list'
+              path: '/control/list/666223/shucan999'
             })
           }, 1500)
         })
